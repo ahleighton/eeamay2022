@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Exercises Day 4 TA &#8212; Open Ephys Electrophysiology Course 2022  documentation</title>
+    <title>Exercises Day 4 &#8212; Open Ephys Electrophysiology Course 2022  documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -32,6 +32,8 @@
     <link rel="shortcut icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Firmata" href="Firmata.html" />
+    <link rel="prev" title="Exercises Day 3" href="exday3.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -74,7 +76,7 @@
  </a>
 </li>
 
-<li class="toctree-l1 nav-item">
+<li class="toctree-l1 current active nav-item">
  <a class="reference internal nav-link" href="eeadocsindex.html">
   EEA Course Documents
  </a>
@@ -144,7 +146,76 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <div class="bd-toc-item active">
-    
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="safety.html">
+   Safety &amp; Good Practices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="software_requirements.html">
+   Software Requirements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="theoryday1.html">
+   Theory Day 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="theoryday2.html">
+   Theory Day 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="theoryday3.html">
+   Theory Day 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="theoryday4.html">
+   Theory Day 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="exday1.html">
+   Exercises Day 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="exday2.html">
+   Exercises Day 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="exday3.html">
+   Exercises Day 3
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Exercises Day 4
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Firmata.html">
+     Firmata
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="projects.html">
+   Project
+  </a>
+ </li>
+</ul>
+
   </div>
 </nav>
               </div>
@@ -231,7 +302,7 @@
                 
 
 <div class="tocsection editthispage">
-    <a href="https://github.com/ahleighton/eeamay2022/edit/main/source/EEA/exday4TA.rst">
+    <a href="https://github.com/ahleighton/eeamay2022/edit/main/source/EEA/exday4.rst">
         <i class="fas fa-pencil-alt"></i> Edit this page
     </a>
 </div>
@@ -250,8 +321,8 @@
               
               <div>
                 
-  <section id="exercises-day-4-ta">
-<span id="refeday4ta"></span><h1>Exercises Day 4 TA<a class="headerlink" href="#exercises-day-4-ta" title="Permalink to this headline">#</a></h1>
+  <section id="exercises-day-4">
+<span id="refeday4"></span><h1>Exercises Day 4<a class="headerlink" href="#exercises-day-4" title="Permalink to this headline">#</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#bonsai" id="id1">Bonsai</a></p>
@@ -395,23 +466,6 @@
 </ol>
 </div></blockquote>
 </div>
-<div class="tabox docutils container">
-<ol class="upperalpha simple">
-<li><p>With two equal resistances, this voltage divider is splitting the difference between the   instrumental amplifier output and +3V in two.</p></li>
-</ol>
-<blockquote>
-<div><p>For low amplitude values of our amplified signal, say -2.6V, the difference is 5.6V and thus it adds 2.8V to -2.6V giving a voltage divider output of +0.2V.</p>
-<p>For large amplitude values of our amplified signal, say +2.6V, the difference is 0.4V and thus it adds 0.2V to +2.6V, giving a voltage divider output of 2.8V.</p>
-<p>Our signal is thus transformed to the 0.2-2.6V range, ready for the digitizing pin of the Teensy.</p>
-<p>Simulator to show this in action: <a class="reference external" href="https://tinyurl.com/yyv98thr">https://tinyurl.com/yyv98thr</a></p>
-</div></blockquote>
-<ol class="upperalpha simple" start="2">
-<li><p>They can also use the firmata in Arduino, under ‘File/Examples/Firmata’. The frequency they acquire at will be important for filtering later on in Bonsai.</p></li>
-</ol>
-<p>C-D. Example Bonsai workflows are here:</p>
-<p><a class="reference external" href="https://github.com/ahleighton/eeamay2022/tree/main/source/_static/ex_code">https://github.com/ahleighton/eeamay2022/tree/main/source/_static/ex_code</a></p>
-<p>Including one that will detect EMG crossing a threshold (parameters will need adjusting) and activate an LED. see: emg_led_standardfirmata</p>
-</div>
 </section>
 </section>
 </section>
@@ -422,6 +476,20 @@
               
               <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="exday3.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Exercises Day 3</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Firmata.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Firmata</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
               
           </main>
