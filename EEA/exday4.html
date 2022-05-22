@@ -422,7 +422,7 @@
 <h3><a class="toc-backref" href="#id6">Analog Inputs</a><a class="headerlink" href="#analog-inputs" title="Permalink to this headline">#</a></h3>
 <div class="exercise docutils container">
 <ul class="simple">
-<li><p>Upload this <a class="reference internal" href="Firmata.html#firmata"><span class="std std-ref">Firmata</span></a> to your Teensy</p></li>
+<li><p>Make sure StandardFirmata is still running on your Teensy</p></li>
 <li><p>In Bonsai, insert an AnalogInput node and configure it to Analog Pin 9.</p></li>
 <li><p>Run the workflow and tap the pin on the Teensy.</p></li>
 <li><p>Use the GreaterThan node to create a ‘touch detector’ that gives a 1 each time you tap the teensy.</p></li>
@@ -460,7 +460,7 @@
 <div><img alt="../_images/board_emg_teensy.png" class="align-center" src="../_images/board_emg_teensy.png" />
 <img alt="../_images/fritz_emg_teensy.png" class="align-center" src="../_images/fritz_emg_teensy.png" />
 <ol class="upperalpha simple" start="2">
-<li><p>Upload ‘Firmata.ino’ to the Teensy (code here: <a class="reference internal" href="Firmata.html#firmata"><span class="std std-ref">Firmata</span></a> ). This script tells the Teensy to read the analog input and can set the frequency of readout.</p></li>
+<li><p>Upload StandardFirmata to your teensy in the Arduino software (File/Examples/Firmata/StandardFirmata). This will acquire at 52 samples per second.</p></li>
 <li><p>Open Bonsai and create an Analog Input node. Double-click this node to visualise your signal.</p></li>
 <li><p>Connect this to a ‘Csv Writer’ node to save your signals.</p></li>
 </ol>
