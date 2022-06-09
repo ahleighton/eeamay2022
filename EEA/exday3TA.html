@@ -295,6 +295,7 @@ Can we use this shiny new differential amplifier to record neural signals?</p>
 <p>2G: Solution: use 3 op-amps. The first two act as buffers for the reference and measurement electrode, the third amplifies the difference between them. Then the differences in input impedances don’t matter.
 <a class="reference external" href="https://tinyurl.com/yz8d8e67">https://tinyurl.com/yz8d8e67</a></p>
 <a class="reference external image-reference" href="https://tinyurl.com/yz8d8e67"><img alt="../_images/instrumentation_amp_simulator.png" class="align-center" src="../_images/instrumentation_amp_simulator.png" /></a>
+<p>Here is a circuit to explain the gain resistor: <a class="reference external" href="https://tinyurl.com/2bwtenvz">https://tinyurl.com/2bwtenvz</a></p>
 </div>
 </section>
 <section id="emg-circuit">
@@ -327,11 +328,13 @@ Can we use this shiny new differential amplifier to record neural signals?</p>
 </ul>
 <p>3B. Now attach the surface electrodes onto the ends of the electrode cable, and click the jack into the breadboard adaptor.</p>
 <p>Each electrode corresponds to a different pin on the breadboard adaptor:</p>
-<ul class="simple">
-<li><p>Black cable = ground electrode = Ring 1</p></li>
-<li><p>Blue cable = ‘-’ (reference) electrode  = Ring 2</p></li>
+<blockquote>
+<div><ul class="simple">
+<li><p>Black cable = ground electrode = Ring 2</p></li>
+<li><p>Blue cable = ‘-’ (reference) electrode  = Ring 1</p></li>
 <li><p>Red cable = ‘+’ electrode = Tip</p></li>
 </ul>
+</div></blockquote>
 <p>3C. Attach your oscilloscope as shown:</p>
 <img alt="../_images/board_emg_picoscope.png" class="align-center" src="../_images/board_emg_picoscope.png" />
 <p>If you tap the electrodes, you should see the trace of your PicoScope respond. Troubleshoot your circuit until you do. Make sure your Picoscope responds to tapping your electrodes before continuing, and ask a TA for help if you get stuck.</p>
